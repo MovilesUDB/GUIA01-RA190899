@@ -65,32 +65,42 @@ operacionesAritmeticas(numero1: 5, numero2: 2, operador:
 //  print("No pude procesar la solicitud")
 // } 
 
-var numeros = [Int]()
-var continuar = true;
-while continuar{
-  print("Ingrese un numero")
-  let tmp = readLine()
+// var numeros = [Int]()
+// var continuar = true;
+// while continuar{
+//   print("Ingrese un numero")
+//   let tmp = readLine()
   
-  if let numero = Int(tmp!){
-    numeros.append(numero)
-  }else{
-    print("No se puede agregar el número")
-  }
+//   if let numero = Int(tmp!){
+//     numeros.append(numero)
+//   }else{
+//     print("No se puede agregar el número")
+//   }
 
-  print("¿Continuar? y/n")
+//   print("¿Continuar? y/n")
 
- continuar = (readLine()=="y") ? true : false
+//  continuar = (readLine()=="y") ? true : false
+// }
+// var mayor = numeros[0]
+// var menor = numeros[0]
+// for numero in numeros{
+//   if(numero > mayor){
+//     mayor = numero
+//   }
+//   if(numero < menor){
+//     menor = numero
+//   }
+//   print(numero)
+// }
+// print ("El numero mayor es \(mayor)")
+// print ("El numero menor es \(menor)")
+
+var previo:Int = 0
+var siguiente:Int = 1
+var temporal:Int = 0
+for _ in 1...15{
+ print(siguiente)
+ temporal = previo
+ previo = siguiente
+ siguiente = previo + temporal
 }
-var mayor = numeros[0]
-var menor = numeros[0]
-for numero in numeros{
-  if(numero > mayor){
-    mayor = numero
-  }
-  if(numero < menor){
-    menor = numero
-  }
-  print(numero)
-}
-print ("El numero mayor es \(mayor)")
-print ("El numero menor es \(menor)")
