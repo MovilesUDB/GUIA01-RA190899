@@ -1,3 +1,5 @@
+import Foundation
+
 let numero1 = 10
 let numero2 = -3
 
@@ -5,6 +7,7 @@ var suma = numero1 + numero2
 
 // for i in 1...10{
 // }
+
 
 // let numero = 13
 // var primo = true
@@ -118,47 +121,45 @@ operacionesAritmeticas(numero1: 5, numero2: 2, operador:
 
 //Primer ejercicio
 
-var fixed_array: [Int] = [ 2, 1, 4, 3, 6, 5, 8, 7, 10, 9]
-var mutable_array: [Int] =  [ 2, 8, 10, 3, 6, 5, 4, 7, 1, 9]
+// var fixed_array: [Int] = [ 2, 1, 4, 3, 6, 5, 8, 7, 10, 9]
+// var mutable_array: [Int] =  [ 2, 8, 10, 3, 6, 5, 4, 7, 1, 9]
 
-let new_fixed_array = fixed_array.sort()
-mutable_array.sortInPlace()
-
-print("> mutable: \(mutable_array.descriptionWithSeparator(", "))")
-print("> fixed: \(fixed_array.descriptionWithSeparator(", "))")
-print("> new fixed: \(new_fixed_array.descriptionWithSeparator(", "))")
+// let new_fixed_array = fixed_array.sorted()
+// print("> fixed: \(fixed_array)")
+// print("> new fixed: \(new_fixed_array)")
 
 
 
-// segundo ejercicio
+// // segundo ejercicio
 
 print("Dime un numero: ", terminator:"")
 var numero = Int(readLine()!) ?? 0 
- var Cont = 0
-  var Lim = 0
+var Cont = 0
+var Lim = 0
 
- (1..numero!!).forEach { div ->
+ (1...numero).forEach { div in
     if(numero % div == 0) {
-        print("$div ")
+        print("Divisor", div)            
     }
 }
-println("Fin!!")
+print("Fin!!")
 
-//Ejemplo Java
 
- System.out.println ("Introduzca un Numero: ");
-        String nu = br.readLine ();
-        int n = Integer.parseInt (nu);
+// //Ejemplo Java
+
+//  System.out.println ("Introduzca un Numero: ");
+//         String nu = br.readLine ();
+//         int n = Integer.parseInt (nu);
  
-        for (int i = 1 ; i <= n ; i++)
-            if (n % i == 0)
-                System.out.println (i);
+//         for (int i = 1 ; i <= n ; i++)
+//             if (n % i == 0)
+//                 System.out.println (i);
 
 
 //Tercer ejercicio
 
-// Usa una potencia de 2 sobre 3.
-// let numero = 3.0 
+//Usa una potencia de 2 sobre 3.
+// let numero = 7.0 
 // let resultado = pow(numero, 2) 
 // // Imprimo en consola los resultados.
 // print ( resultado )
@@ -168,9 +169,9 @@ println("Fin!!")
 
 //cuarto ejercicio
 
-// let a = 1
+// var ab = 1
 // let base = 5
-// for a in 1...5 {
-//   a *= base
-//   print(a)
+// for a in 1...10 {
+//   ab *= base
+//   print(ab)
 // }
