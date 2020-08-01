@@ -95,12 +95,82 @@ operacionesAritmeticas(numero1: 5, numero2: 2, operador:
 // print ("El numero mayor es \(mayor)")
 // print ("El numero menor es \(menor)")
 
-var previo:Int = 0
-var siguiente:Int = 1
-var temporal:Int = 0
-for _ in 1...15{
- print(siguiente)
- temporal = previo
- previo = siguiente
- siguiente = previo + temporal
+// var previo:Int = 0
+// var siguiente:Int = 1
+// var temporal:Int = 0
+// for _ in 1...15{
+//  print(siguiente)
+//  temporal = previo
+//  previo = siguiente
+//  siguiente = previo + temporal
+// }
+
+//
+// print("Ingrese año")
+// var input = Int(readLine(strippingNewline: true)!)
+// print(anioBisiesto(anio: input!) ? "Si es" : "No es")
+
+
+// print(intereSimple())
+
+// print(factorial(i: 5))
+
+
+//Primer ejercicio
+
+var fixed_array: [Int] = [ 2, 1, 4, 3, 6, 5, 8, 7, 10, 9]
+var mutable_array: [Int] =  [ 2, 8, 10, 3, 6, 5, 4, 7, 1, 9]
+
+let new_fixed_array = fixed_array.sort()
+mutable_array.sortInPlace()
+
+print("> mutable: \(mutable_array.descriptionWithSeparator(", "))")
+print("> fixed: \(fixed_array.descriptionWithSeparator(", "))")
+print("> new fixed: \(new_fixed_array.descriptionWithSeparator(", "))")
+
+
+
+// segundo ejercicio
+
+print("Dime un numero: ", terminator:"")
+var numero = Int(readLine()!) ?? 0 
+ var Cont = 0
+  var Lim = 0
+
+ (1..numero!!).forEach { div ->
+    if(numero % div == 0) {
+        print("$div ")
+    }
 }
+println("Fin!!")
+
+//Ejemplo Java
+
+ System.out.println ("Introduzca un Numero: ");
+        String nu = br.readLine ();
+        int n = Integer.parseInt (nu);
+ 
+        for (int i = 1 ; i <= n ; i++)
+            if (n % i == 0)
+                System.out.println (i);
+
+
+//Tercer ejercicio
+
+// Usa una potencia de 2 sobre 3.
+// let numero = 3.0 
+// let resultado = pow(numero, 2) 
+// // Imprimo en consola los resultados.
+// print ( resultado )
+
+
+
+
+//cuarto ejercicio
+
+// let a = 1
+// let base = 5
+// for a in 1...5 {
+//   a *= base
+//   print(a)
+// }

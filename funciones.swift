@@ -40,3 +40,33 @@ func edad(_ edad:Int) -> String{
   }
  return mensaje;
 } 
+
+func anioBisiesto(anio: Int) ->Bool{
+  return(( (anio%4 == 0 && anio%100 != 0) || anio%400 == 0))
+}
+
+func intereSimple() -> Double{
+  print("Ingrese el monto a pagar")
+  let monto = Double(readLine(strippingNewline: true)!)
+
+  print("Ingrese el interes")
+  let interes = Double(readLine(strippingNewline: true)!)
+
+  print("Ïngrese el tiempo en años")
+  let tiempo = Double(readLine(strippingNewline: true)!)
+
+  return monto! * interes! * tiempo!;
+}
+
+func factorial(i: Int) -> Int{
+
+  if i == 0{
+    return 1
+  } else if i < 0 {
+    return 0 
+  } else if i > 0 {
+    return i *  factorial(i: i - 1)
+  }
+
+  return i
+}
